@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/project.css">
+
+        <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="asset/foto.png" alt="logo">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+        <div class="btn">
+            <button>Contact me <i class="ri-arrow-right-line"></i></button>
+        </div>
+    </nav>
+<!-- navbar and -->
+<div class="form-container" id="project">
+    <h2>ADD MY PROJECT</h2>
+    <form class="wraperr" onsubmit="submitBtn(event)">
+        <div class="form-group">
+            <label for="projectName">Project Name</label>
+            <input type="text" id="projectName" placeholder="project name">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate">
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" rows="4"></textarea>
+        </div>
+
+        <div class="title-chek">
+            <p>Technologies</p>
+        </div>
+        <div class="checkbox-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="nodejs">
+                <label for="nodejs">Node Js</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="reactjs">
+                <label for="reactjs">React Js</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="nextjs">
+                <label for="nextjs">Next Js</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="checkbox" id="typescript">
+                <label for="typescript">TypeScript</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="uploadImage">Upload Image</label>
+            <input type="file" id="uploadImage">
+        </div>
+        <div class="btn-container">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</div>
+<div class="container" id="cardContainer">
+    
+</div>
+
+    <script src="js/project.js"></script>
+</body>
+</html>

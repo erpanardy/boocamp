@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+</head>
+<body>
+    <!-- navbar star -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="asset/foto.png" alt="logo">
+        </div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="project.html">Project</a></li>
+        </ul>
+        <div class="btn">
+            <button>Contact me <i class="ri-arrow-right-line"></i></button>
+        </div>
+    </nav>
+    <!-- navbar and -->
+
+        <div class="container">
+        <h1 class="title">Hi Welcome to my hut</h1>
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, quia quibusdam eum voluptate necessitatibus praesentium! Inventore aut deserunt laudantium eaque.
+            Lorem ipsum dolor sit amet.
+        </p>
+        <button class="btn-contact">contact</button>
+        <p class="cv-download">
+            <a href="#" class="cv-link">download CV <i class="fas fa-download"></i></a>
+        </p>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="#"><i class="fab  fa-linkedin fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+
+        <div class="card">
+            <img src="asset/foto.png" class="images" alt="foto">
+            <div class="info">
+                <p class="name">Muh irfan ardyansyah</p>
+                <p class="role">Fullstack Developer</p>
+            </div>
+
+        </div>
+    </div>
+
+<!-- form input -->
+<div class="container2">
+<form action="">
+    <div class="title">
+        <h2>Get In Touch</h2>
+    </div>
+    <div>
+        <label for="">nama</label>
+        <input id="input-name" type="text">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input id="input-email" type="email">
+    </div>
+    <div>
+        <label for="">Phone number</label>
+        <input id="input-phone" type="number">
+    </div>
+    <div>
+        <label for="">Subject</label>
+        <select name="" id="Subject">
+            <option value="fullstack developer">fullstack developer</option>
+            <option value="Frontand developer">Frontand developer</option>
+            <option value="Backand developer">Backand developer</option>
+        </select>
+    </div>
+    <div>    
+        <label for="">Your message</label>
+        <textarea name="" id="message"></textarea>
+    </div>
+    <div class="btn-submit">
+        <button onclick=sendToMail()>Submit</button>
+    </div>
+</form>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
