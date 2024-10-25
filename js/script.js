@@ -35,4 +35,9 @@ function sendToMail() {
   a.click()
 }
 
+const navbar = document.querySelector(".menu"); 
 
+document.querySelector("#humbburger-menu").onclick = (e) => {
+  navbar.classList.toggle("active");
+  e.preventDefault();
+};
